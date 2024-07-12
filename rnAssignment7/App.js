@@ -1,22 +1,20 @@
-import { NavigationContainer } from '@react-navigation/native';
-import { createDrawerNavigator } from '@react-navigation/drawer';
-import * as React from 'react';
-import Home from './Home';
-import Cart from './Cart';
-import ProductDetail from './ProductDetail';
-import SideMenu from './SideMenu';
-import 'react-native-gesture-handler';
-
-const Drawer = createDrawerNavigator();
+import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
   return (
-    <NavigationContainer>
-      <Drawer.Navigator drawerContent={(props) => <SideMenu {...props} />}>
-        <Drawer.Screen name="Home" component={Home} options={{headerShown:false}}/>
-        <Drawer.Screen name="Cart" component={Cart} options={{headerShown:false}}/>
-        <Drawer.Screen name="ProductDetail" component={ProductDetail} options={{headerShown:false}}/>
-      </Drawer.Navigator>
-    </NavigationContainer>
+    <View style={styles.container}>
+      <Text>Open up App.js to start working on your app!</Text>
+      <StatusBar style="auto" />
+    </View>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
