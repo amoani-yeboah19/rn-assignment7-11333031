@@ -19,7 +19,7 @@ export default function Sidebar({toggleSidebar, sidebarAnimation}) {
                 <Image style={styles.close} source={require('../assets/Close.png')} />
             </TouchableOpacity>
             <View style={styles.sidebarContainer}>
-                <Text style={styles.heading}>JOSEPH OTENG </Text>
+                <Text style={styles.heading}>BRIGHT </Text>
                 <View style={styles.line}></View>
                 <TouchableOpacity onPress={navigateToHomeScreen}>
                     <Text style={styles.options}>Store</Text>
